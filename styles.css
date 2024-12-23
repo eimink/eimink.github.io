@@ -1,12 +1,14 @@
 :root {
     --left-width: 20rem;
-    --right-width: calc(100% - var(--left-width) - 20px);
+    --right-width: calc(100% - var(--left-width) - 40px);
+    --right-padding: 10px 10px 10px 40px;
 }
 
 @media screen and (max-width: 643px) {
     :root {
         --left-width: 12rem;
-        --right-width: calc(100% - var(--left-width) - 20px);
+        --right-width: calc(100% - var(--left-width) - 30px);
+        --right-padding: 10px 10px 10px 30px;
     }
 }
    
@@ -68,7 +70,7 @@ html, body {
     width: var(--left-width);
     overflow-y: auto;
     overflow-x: overlay;
-    padding: 10px 0px 10px 10px;
+    padding: 10px 10px 10px 20px;
     color: springgreen;
     z-index: 1;
 }
@@ -128,7 +130,7 @@ html, body {
     left: calc(var(--left-width) + 10px);
     width: var(--right-width);
     position: relative;
-    padding: 10px 10px 10px 20px;
+    padding: var(--right-padding);
 }
 
 .image-container {
