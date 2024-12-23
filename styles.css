@@ -1,5 +1,6 @@
 :root {
     --left-width: 20rem;
+    --right-width: calc(100% - var(--left-width) - 20px);
 }
 /* lato-regular - latin */
 @font-face {
@@ -31,7 +32,15 @@ html, body {
     margin: 0;
     font-family: "Lato", sans-serif;
     font-weight: 400;
-    background-color: mediumpurple;
+    background-color: #22063e;
+}
+
+.right-bacground {
+    background-color: #c7c4ff;
+}
+
+.left-background {
+    background-color: #3E1586;
 }
 
 .container {
@@ -101,16 +110,9 @@ html, body {
     );
 }
 
-.right-bacground {
-    background-color: lightblue;
-}
-
-.left-background {
-    background-color: #3E1586;
-}
-
 .right-column {
     left: calc(var(--left-width) + 10px);
+    width: var(--right-width);
     position: relative;
     padding: 10px 10px 10px 20px;
 }
